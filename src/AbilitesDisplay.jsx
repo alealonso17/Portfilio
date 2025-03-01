@@ -245,16 +245,7 @@ export function AbilitesDisplay({selected}) {
             </div>
         )
     }else{
-        return(
-            <div>
-                <section className='None'>
-                    <h2 className="titleLa">SELECT TEACHNOLOGY / TOOL </h2>
-                    <img className="arrowImg"src ="/arrow.png"/>
 
-                        
-                </section>
-            </div>
-        )
     }
     
 
