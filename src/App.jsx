@@ -8,9 +8,45 @@ import{TecDisplay} from "./TecDisplay"
 import { useState } from "react"
 import { Description } from "./description";
 import { AbilitesDisplay } from "./AbilitesDisplay";
-
+import { useEffect } from "react";
 export function App(){
     const [selected, setSelected] = useState(null);
+    const [scrollLimit, setScrollLimit] = useState(1000);
+  
+    const checkScroll = () => {
+      if (selected === "Languages") {
+        setScrollLimit(2200);
+      }  else    if (selected === "Database") {
+        setScrollLimit(1100);
+      }
+      else {
+        setScrollLimit(1000);
+      }
+    };
+  
+    useEffect(() => {
+      checkScroll();
+    }, [selected]);  // Llamar a checkScroll cuando el estado 'selected' cambie
+  
+    useEffect(() => {
+      const handleScroll = (event) => {
+        // Limita el scroll para que no pase del valor 'scrollLimit'
+        if (window.scrollY > scrollLimit) {
+          event.preventDefault(); // Bloquea el scroll
+          window.scrollTo(0, scrollLimit); // Ajusta la posición del scroll
+        }
+      };
+  
+      // Añadir el event listener cuando el componente se monta
+      window.addEventListener('scroll', handleScroll, { passive: false });
+  
+      // Limpiar el event listener cuando el componente se desmonta
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
+    }, [scrollLimit]);  // Vuelve a ejecutar cuando cambie el scrollLimit
+
+    
     const discover = selected? "discoverTecOn" : "discoverTec"
     let classRi ="";
     if(selected == "Languages"){ classRi = "rigthScreen-la"}
@@ -83,9 +119,19 @@ export function App(){
                 </div>
                 <div className="discover"> 
                     <h1 className="Discover_text">Social</h1>
-                    <div className="followers">
-
-
+                <div className="SocialIcons"> 
+                    <a href="https://www.facebook.com/alex.alonso.77964">
+                        <img className="imagenNoticiaRelevante" src="/fb.jpg"/>
+                     </a>
+                     <a href="https://www.linkedin.com/in/alejandro-alonso-lopez-b9145b353/">
+                        <img className="imagenNoticiaRelevante" src="/linkedin.png"/> 
+                        </a>
+                    <a href="https://www.instagram.com/alealonso017/">
+                            <img className="imagenNoticiaRelevante" src="/insta.jpg"/> 
+                    </a>
+                    <a href="https://github.com/alealonso17">
+                        <img className="imagenNoticiaRelevante" src="/githubs.png"/> 
+                    </a>
                     </div>
                     
     

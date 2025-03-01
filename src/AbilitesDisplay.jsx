@@ -248,7 +248,7 @@ export function AbilitesDisplay({selected}) {
         return(
             <div>
                 <section className='None'>
-                    <h2 className="titleLa">SELECT AN OPTION </h2>
+                    <h2 className="titleLa">SELECT TEACHNOLOGY / TOOL </h2>
                     <img className="arrowImg"src ="/arrow.png"/>
 
                         

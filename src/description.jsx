@@ -7,11 +7,15 @@ export function Description(){
         <section className="AboutMe"> 
             <header className = "AboutMeText">
                 <h1 className="titleAboutME">ABOUT ME</h1>
-                <p className="DescriptionAboutMe">I am a current student in the Computer Science field at Robert Gordon University, <br/>originally from Spain, with a strong passion
-                for  software development<br/> , problem-solving, and learning new technologies. I am excited to continue<br/> learning
-                and contribute to the growth of any  project or company I work with.<br/> With a solid foundation in technology,
-                incredible academic success (with all A’s <br/>so far), and a track record of achievements in robotics and scientific<br/>
-                projects, I am eager to make a meaningful impact<br/>  in the tech field.</p>
+                <p className="DescriptionAboutMe">
+    I am a Computer Science student at Robert Gordon University, <br/>
+    originally from Spain, with a strong passion for software development,<br/>
+    problem-solving, and learning new technologies. I have a solid<br/>
+    foundation in technology, a proven track record of academic excellence<br/>
+    (all A’s so far), and achievements in robotics and scientific projects.<br/>
+    I am eager to apply my skills, contribute to innovative projects,<br/>
+    and make a meaningful impact in the tech industry.
+</p>
 
             </header>
             <div className = "imagesAboutMe">
