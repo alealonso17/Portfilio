@@ -451,6 +451,14 @@
     
 
 }
+.searchOptions ul{
+    display:flex; 
+    flex-direction: column;
+    gap:10px; 
+    border: 1px solid white;
+    padding:10px; 
+    list-style: none;
+}
 .GrupoNoticia{
     display:flex; 
     opacity: 40%;
