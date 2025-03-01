@@ -8,7 +8,7 @@ export function Noticia () {
                 src= "/trofeo.jpg"
              
              />
-            <a href="https://www.youtube.com/watch?v=K_PuWjr7qcM&ab_channel=OfficialFIRST" className ="descripcionNoticiaRelevante">FIRST ®  LEGO ®  League <br/> -FLL-<em class="directo"> RECAP</em></a>
+            <a href="https://www.youtube.com/watch?v=K_PuWjr7qcM&ab_channel=OfficialFIRST" className ="descripcionNoticiaRelevante" target="_blank" rel="noopener noreferrer">FIRST ®  LEGO ®  League <br/> -FLL-<em class="directo"> RECAP</em></a>
 
         </div>
     <aside>   

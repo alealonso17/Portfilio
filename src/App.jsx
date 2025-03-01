@@ -1,62 +1,103 @@
 import { Premium } from "./Premium";
 import { Noticia } from "./noticias";
-import { SearchBar } from "./BusquedaBarra";
+
 import { NoticiasSmall } from "./noticiasSmall";
-import { Logo } from "./Logo";
+// import { Logo } from "./Logo";
 import { StudiesDisplay } from "./followers";
 import{TecDisplay} from "./TecDisplay"
 import { useState } from "react"
 import { Description } from "./description";
 import { AbilitesDisplay } from "./AbilitesDisplay";
 import { useEffect } from "react";
+
 export function App(){
-    const [selected, setSelected] = useState(null);
-    const [scrollLimit, setScrollLimit] = useState(1000);
+    
+  // Estado para el término de búsqueda
+  const [searchTerm, setSearchTerm] = useState('');
+  const [selectedOption, setSelectedOption] = useState(null);
   
-    const checkScroll = () => {
-      if (selected === "Languages") {
-        setScrollLimit(2200);
-      }  else    if (selected === "Database") {
-        setScrollLimit(1100);
-      }
-      else {
-        setScrollLimit(1000);
+  // Opciones para la barra de búsqueda
+  const options = [
+    { name: 'GitHub', url: 'https://github.com/alealonso17' },
+    { name: 'Twitter', url: 'https://twitter.com' },
+    { name: 'LinkedIn', url: 'https://www.linkedin.com/in/alejandro-alonso-lopez-b9145b353/' },
+    { name: 'Instagram', url: 'https://www.instagram.com/alealonso017/' },
+    { name: 'My Knowledge', url: '#' },
+    { name: 'Academic Studies', url: '#' },
+    { name: 'About Me', url: '#' },
+    { name: 'Competitions', url: '#' },
+  ];
+
+  // Filtrar las opciones según el texto de búsqueda
+  const filteredOptions = options.filter(option =>
+    option.name.toLowerCase().includes(searchTerm.toLowerCase())
+  );
+
+  const handleOptionClick = (index, url) => {
+    // Establecer la opción seleccionada
+    setSelectedOption(index);
+    // Abrir el enlace
+    window.open(url, '_blank');
+  };
+
+
+
+  const [selected, setSelected] = useState(null);
+  const [scrollLimit, setScrollLimit] = useState(1000);
+  const [isFocused, setIsFocused] = useState(false);
+
+  // Funciones para manejar el enfoque del input
+  const handleFocus = () => setIsFocused(true);
+  const handleBlur = () => setIsFocused(false);
+
+  const checkScroll = () => {
+    if (selected === "Languages") {
+      setScrollLimit(2200);
+    } else if (selected === "Database") {
+      setScrollLimit(1100);
+    } else {
+      setScrollLimit(1000);
+    }
+  };
+
+  useEffect(() => {
+    checkScroll();
+  }, [selected]); // Llamar a checkScroll cuando el estado 'selected' cambie
+
+  useEffect(() => {
+    const handleScroll = (event) => {
+      // Limita el scroll para que no pase del valor 'scrollLimit'
+      if (window.scrollY > scrollLimit) {
+        event.preventDefault(); // Bloquea el scroll
+        window.scrollTo(0, scrollLimit); // Ajusta la posición del scroll
       }
     };
-  
-    useEffect(() => {
-      checkScroll();
-    }, [selected]);  // Llamar a checkScroll cuando el estado 'selected' cambie
-  
-    useEffect(() => {
-      const handleScroll = (event) => {
-        // Limita el scroll para que no pase del valor 'scrollLimit'
-        if (window.scrollY > scrollLimit) {
-          event.preventDefault(); // Bloquea el scroll
-          window.scrollTo(0, scrollLimit); // Ajusta la posición del scroll
-        }
-      };
-  
-      // Añadir el event listener cuando el componente se monta
-      window.addEventListener('scroll', handleScroll, { passive: false });
-  
-      // Limpiar el event listener cuando el componente se desmonta
-      return () => {
-        window.removeEventListener('scroll', handleScroll);
-      };
-    }, [scrollLimit]);  // Vuelve a ejecutar cuando cambie el scrollLimit
 
-    
-    const discover = selected? "discoverTecOn" : "discoverTec"
-    let classRi ="";
-    if(selected == "Languages"){ classRi = "rigthScreen-la"}
-    else if(selected == "Web Development"){classRi="rigthScreen-wd"}
-    else if(selected == "Frameworks"){classRi = "rigthScreen-wd-fr"}
-    else if(selected == "Database"){classRi = "rigthScreen-wd-db"}
-    else if(selected == "Tools"){classRi = "rigthScreen-wd-t"}
-    
-    
-    else{classRi = "rigthScreen"}
+    // Añadir el event listener cuando el componente se monta
+    window.addEventListener('scroll', handleScroll, { passive: false });
+
+    // Limpiar el event listener cuando el componente se desmonta
+    return () => {
+      window.removeEventListener('scroll', handleScroll);
+    };
+  }, [scrollLimit]);  // Vuelve a ejecutar cuando cambie el scrollLimit
+
+  const discover = selected ? "discoverTecOn" : "discoverTec";
+  let classRi = "";
+  if (selected == "Languages") {
+    classRi = "rigthScreen-la"
+  } else if (selected == "Web Development") {
+    classRi = "rigthScreen-wd"
+  } else if (selected == "Frameworks") {
+    classRi = "rigthScreen-wd-fr"
+  } else if (selected == "Database") {
+    classRi = "rigthScreen-wd-db"
+  } else if (selected == "Tools") {
+    classRi = "rigthScreen-wd-t"
+  } else {
+    classRi = "rigthScreen"
+  }
+
     return(
         <>
         
@@ -120,17 +161,17 @@ export function App(){
                 <div className="discover"> 
                     <h1 className="Discover_text">Social</h1>
                 <div className="SocialIcons"> 
-                    <a href="https://www.facebook.com/alex.alonso.77964">
+                    <a href="https://www.facebook.com/alex.alonso.77964" target="_blank" rel="noopener noreferrer" >
                         <img className="imagenNoticiaRelevante" src="/fb.jpg"/>
                      </a>
-                     <a href="https://www.linkedin.com/in/alejandro-alonso-lopez-b9145b353/">
+                     <a href="https://www.linkedin.com/in/alejandro-alonso-lopez-b9145b353/"  target="_blank" rel="noopener noreferrer">
                         <img className="imagenNoticiaRelevante" src="/linkedin.png"/> 
                         </a>
-                    <a href="https://www.instagram.com/alealonso017/">
-                            <img className="imagenNoticiaRelevante" src="/insta.jpg"/> 
+                    <a href="https://www.instagram.com/alealonso017/" target="_blank" rel="noopener noreferrer">
+                            <img className="imagenNoticiaRelevante" src="/insta.jpg" /> 
                     </a>
-                    <a href="https://github.com/alealonso17">
-                        <img className="imagenNoticiaRelevante" src="/githubs.png"/> 
+                    <a href="https://github.com/alealonso17" target="_blank" rel="noopener noreferrer">
+                        <img className="imagenNoticiaRelevante" src="/githubs.png" /> 
                     </a>
                     </div>
                     
@@ -142,7 +183,36 @@ export function App(){
                     <AbilitesDisplay selected = {selected} />
                 </section>
                 <section className =  {classRi}>
-                    <SearchBar /> 
+                <div className="searchBar">
+                    <input
+                      className="searchBar-input"
+                      type="text"
+                      placeholder="Buscar"
+                      value={searchTerm}
+                      onChange={(e) => setSearchTerm(e.target.value)} // Actualizar el término de búsqueda
+                    />
+
+                    {searchTerm && (
+                      <div className="searchOptions">
+                        <ul>
+                          {filteredOptions.map((option, index) => (
+                            <li
+                                key={index}
+                                className={`optionSearch ${selectedOption === index ? 'selected' : ''}`}
+                                onClick={(e) => {
+                                    e.preventDefault(); // Previene el comportamiento por defecto del enlace
+                                    handleOptionClick(index, option.url); // Abre la URL en una nueva pestaña
+                                }}
+                            >
+                                <a href={option.url} target="_blank" rel="noopener noreferrer">
+                                    {option.name}
+                                </a>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )}
+                  </div>
                     <Premium />
                     <div className="todasNoticias" > 
                         <Noticia />

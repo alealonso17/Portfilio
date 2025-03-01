@@ -13,7 +13,7 @@ export function StudiesDisplay({name, username,link, buttonlink}){
             </header>
 
             <aside>
-                 <a href={buttonlink}   >
+                 <a href={buttonlink}   target="_blank" rel="noopener noreferrer" >
                     <button className="tw-follow-button" >
                         See
                     </button>
