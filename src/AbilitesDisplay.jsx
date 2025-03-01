@@ -236,7 +236,7 @@ export function AbilitesDisplay({selected}) {
                         <img className="imagenNoticiaRelevante" src="/git.jpg"/>
                         
                     </div>
-                    <h2 className="titlePro">PROJECTS</h2>
+                    
 
                         
 
