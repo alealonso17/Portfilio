@@ -8,7 +8,19 @@
     gap:40px;
     margin-right: 10px;
    
-    
+     
+}
+
+.rigthScreen-la{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-4040px;
+    gap:40px;
+    margin-right: 10px;
+   
+     
 }
 .centerScreen{
     display:flex; 
@@ -127,10 +139,15 @@
     flex-direction: column;
 }
 .ProjectX{
+
     display: flex;
     margin-top: 60px;
     align-items: center;
-    gap:20px
+    gap:20px;
+    border:1px solid #353535;
+    padding:10px;
+    border-radius: 17px;;
+    
 }
 .menuGif{
     width: 300px;
@@ -190,20 +207,32 @@
 }
 .imagesLanguages{
     display:flex; 
-    margin-top: 40px;
+    margin-top: 80px;
     justify-content: space-between;
+    
+}
+.titlePro{
+    margin-top: 100px;
+    text-align: center;
+    font-family: fantasy;
 }
 .titleInfoDispla{
     margin-top: 150px;
     text-align: center;
 }
-.languages{
+.Languages{
     display: flex; 
+    flex-direction: column;
+    gap:10px;
+    border:2px solid hsl(260, 69%, 68%);
+    padding:20px;
+    border-radius: 17px;
+    margin-top:60px;
     
 }
 .titleLa{
     text-align: center;
-    margin-top: 180px;
+    font-family: fantasy;
     margin-bottom: 50px;
 }
 .AboutMeText{

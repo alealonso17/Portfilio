@@ -12,6 +12,9 @@ import { AbilitesDisplay } from "./AbilitesDisplay";
 export function App(){
     const [selected, setSelected] = useState(null);
     const discover = selected? "discoverTecOn" : "discoverTec"
+    let classRi ="";
+    if(selected == "Languages"){ classRi = "rigthScreen-la"}
+    else{classRi = "rigthScreen"}
     return(
         <>
         
@@ -86,7 +89,7 @@ export function App(){
                     <Description/> 
                     <AbilitesDisplay selected = {selected} />
                 </section>
-                <section className =  "rigthScreen">
+                <section className =  {classRi}>
                     <SearchBar /> 
                     <Premium />
                     <div className="todasNoticias" > 
