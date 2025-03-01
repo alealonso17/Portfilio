@@ -7,7 +7,7 @@ export function AbilitesDisplay({selected}) {
         return(
             <div>
                 <section className='Languages'>
-                    <h2 className="titleLa">Languages</h2>
+                    <h2 className="titleLa">LANGUAGES</h2>
 
                     <p>Throughout my studies, I have worked with different programming languages such<br/> as Python, C#, JavaScript, etc.</p>
                     <ul>
@@ -21,7 +21,7 @@ export function AbilitesDisplay({selected}) {
                         <img className="imagenNoticiaRelevante" src="/js.png"/>
                         <img className="imagenNoticiaRelevante" src="/c.png"/>
                     </div>
-                    <h2 className="titlePro">Projects</h2>
+                    <h2 className="titlePro">PROJECTS</h2>
                     <ProjectInfo
                         img = "/python.png"
                         title="Wild Buddy - HackazonRGU 2024: "
@@ -91,32 +91,169 @@ export function AbilitesDisplay({selected}) {
     }else if(selected=="Web Development"){
         return(
             <div>
-                <h1>Web Development</h1>
+                <section className='Languages'>
+                    <h2 className="titleLa">WEB DEVELOPEMENT</h2>
+
+                    <p>I have worked with different web developing tools such as CSS, JSx and HTML.</p>
+                    <ul>
+                        
+                        <li><strong>JavaScriptXML</strong></li> 
+                        <li><strong>CSS</strong></li> 
+                        <li><strong>HTML</strong></li> 
+                    </ul>
+                    <div className='imagesLanguages'>
+                        <img className="imagenNoticiaRelevante" src="/html.webp"/>
+                        <img className="imagenNoticiaRelevante" src="/jsx.png"/>
+                        <img className="imagenNoticiaRelevante" src="/css.svg"/>
+                    </div>
+                    <h2 className="titlePro">PROJECTS</h2>
+                    <ProjectInfo
+                        img = "/jsx.png"
+                        title="Portfolio Website"
+                        text={
+                            <>
+                                 This website was entirely <br/>created by me using <br/>HTML, CSS, and JSX(react).<br/>
+                                  With only three days<br/> of intensive study in <br/>these technologies, I embarked<br/>
+                                   on the development of<br/> my portfolio. I am<br/>
+                                    truly passionate about this<br/> field, and if I was<br/>
+                                     able to achieve this<br/> in just three days, I <br/>
+                                     can only imagine what<br/> I will be capable<br/>
+                                      of as I continue learning.<br/> Knowledge is a powerful tool, <br/>
+                                      and with dedication and <br/>curiosity, the possibilities are<br/>
+                                       endless.
+                            </>
+                        }
+                        img2="/trofeo.jpg"
+                    /> 
+
+                        
+                </section>
             </div>
         )
     }else if(selected=="Frameworks"){
         return(
             <div>
-                <h1>Frameworks</h1>
+                <section className='Languages'>
+                    <h2 className="titleLa">FRAMEWORKS</h2>
+
+                    <p>During my studies, we have used .NET 9.0 and 8.0 with C#. On the other hand, React<br/> is something I have learned through self-study.</p>
+                    <ul>
+                        
+                        <li><strong>.NET</strong></li> 
+                        <li><strong>React</strong></li> 
+                        
+                    </ul>
+                    <div className='imagesLanguages'>
+                        <img className="imagenNoticiaRelevante" src="/dotnet.png"/>
+                        <img className="imagenNoticiaRelevante" src="/react.png"/>
+                        
+                    </div>
+                    <h2 className="titlePro">PROJECTS</h2>
+                    <ProjectInfo
+                        img = "/react.png"
+                        title="Portfolio Website"
+                        text={
+                            <>
+                                 This website was entirely <br/>created by me using <br/>HTML, CSS, and JSX(react).<br/>
+                                  With only three days<br/> of intensive study in <br/>these technologies, I embarked<br/>
+                                   on the development of<br/> my portfolio. I am<br/>
+                                    truly passionate about this<br/> field, and if I was<br/>
+                                     able to achieve this<br/> in just three days, I <br/>
+                                     can only imagine what<br/> I will be capable<br/>
+                                      of as I continue learning.<br/> Knowledge is a powerful tool, <br/>
+                                      and with dedication and <br/>curiosity, the possibilities are<br/>
+                                       endless.
+                            </>
+                        }
+                        img2="/trofeo.jpg"
+                    /> 
+
+                        
+                </section>
             </div>
         )
     }else if(selected=="Database"){
         return(
             <div>
-                <h1>Database</h1>
+                <section className='Languages'>
+                    <h2 className="titleLa">DATABASE</h2>
+
+                    <p>During my studies, I have worked with SQL Server and have deeply studied SQL<br/> and its fundamentals, including diagrams, table normalization, and other core concepts.<br/> Additionally,I have self-taught myself MySQL and R.</p>
+                    <ul>
+                        
+                        <li><strong>MySQL</strong></li> 
+                        <li><strong>SQL Server</strong></li> 
+                        
+                    </ul>
+                    <div className='imagesLanguages'>
+                        <img className="imagenNoticiaRelevante" src="/sqls.webp"/>
+                        <img className="imagenNoticiaRelevante" src="/mysql.png"/>
+                        
+                    </div>
+                    <h2 className="titlePro">PROJECTS</h2>
+                    <ProjectInfo
+                        img = "/mysql.png"
+                        title="Terminal Decision-Making Game"
+                        text={
+                            <>
+                                 A game where players<br/>
+                                  make decisions, and based<br/> on those choices, they <br/>
+                                  encounter monsters with item <br/>drop rates. The game<br/>
+                                   includes a personal inventory<br/> system with armor, potions,<br/>
+                                    and weapons that can<br/> be equipped. Combat mechanics <br/>
+                                    are also part of <br/>the game. Additionally, players<br/>
+                                     can register and save<br/> their progress at the<br/>
+                                      end of each chapter.<br/> This allows players to <br/>
+                                      continue from where they<br/> left off with the <br/>
+                                      same inventory and stats<br/> the next time they <br/>
+                                      play. This is achieved<br/> through a MySQL server<br/>
+                                       that stores player data.
+                            </>
+                        }
+                        img2="/trofeo.jpg"
+                    /> 
+                        
+
+                        
+                </section>
             </div>
         )
     }else if(selected=="Tools"){
         return(
             <div>
-                <h1>Tools</h1>
+                <section className='Languages'>
+                    <h2 className="titleLa">TOOLS</h2>
+
+                    <p>I have proactively taken a Git course outside of university and become more<br/> comfortable with the commands. This has greatly improved my workflow and <br/>collaboration skills.In addition, I have spent the majority of my timeworking with<br/> Visual Studio Code, which has become <br/>my primary toolfor development </p>
+                    <ul>
+                        
+                        <li><strong>GIT</strong></li> 
+                        <li><strong>VSCode</strong></li> 
+                        
+                    </ul>
+                    <div className='imagesLanguages'>
+                        <img className="imagenNoticiaRelevante" src="/vsc.png"/>
+                        <img className="imagenNoticiaRelevante" src="/git.jpg"/>
+                        
+                    </div>
+                    <h2 className="titlePro">PROJECTS</h2>
+
+                        
+
+                        
+                </section>
             </div>
         )
     }else{
-        return (
+        return(
             <div>
-            <h1>Select an option</h1>
-        </div>
+                <section className='None'>
+                    <h2 className="titleLa">SELECT AN OPTION </h2>
+                    <img className="arrowImg"src ="/arrow.png"/>
+
+                        
+                </section>
+            </div>
         )
     }
     

@@ -14,6 +14,12 @@ export function App(){
     const discover = selected? "discoverTecOn" : "discoverTec"
     let classRi ="";
     if(selected == "Languages"){ classRi = "rigthScreen-la"}
+    else if(selected == "Web Development"){classRi="rigthScreen-wd"}
+    else if(selected == "Frameworks"){classRi = "rigthScreen-wd-fr"}
+    else if(selected == "Database"){classRi = "rigthScreen-wd-db"}
+    else if(selected == "Tools"){classRi = "rigthScreen-wd-t"}
+    
+    
     else{classRi = "rigthScreen"}
     return(
         <>

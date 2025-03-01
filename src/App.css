@@ -4,11 +4,44 @@
     flex-direction: column;
     align-items: flex-end; 
     position: relative; 
-    top:-1680px;
+    top:-1882px;
     gap:40px;
     margin-right: 10px;
    
      
+}
+.rigthScreen-wd-t{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-2392px;
+    gap:40px;
+    margin-right: 10px;
+   
+}
+.rigthScreen-wd-db{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-2905px;
+    gap:40px;
+    margin-right: 10px;
+   
+}
+.rigthScreen-wd-fr{
+   
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-2831px;
+    gap:40px;
+    margin-right: 10px;
+       
+         
+    
 }
 
 .rigthScreen-la{
@@ -16,7 +49,19 @@
     flex-direction: column;
     align-items: flex-end; 
     position: relative; 
-    top:-4040px;
+    top:-4041px;
+    gap:40px;
+    margin-right: 10px;
+   
+     
+}
+
+.rigthScreen-wd{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-2831px;
     gap:40px;
     margin-right: 10px;
    
@@ -194,6 +239,10 @@
     
      
 }
+.arrowImg{
+    height: 50px;
+    width: 100px;
+}
 .leftScreen{
     display:flex; 
     flex-direction: column;
@@ -208,7 +257,7 @@
 .imagesLanguages{
     display:flex; 
     margin-top: 80px;
-    justify-content: space-between;
+    justify-content:center;
     
 }
 .titlePro{
@@ -225,6 +274,16 @@
     flex-direction: column;
     gap:10px;
     border:2px solid hsl(260, 69%, 68%);
+    padding:20px;
+    border-radius: 17px;
+    margin-top:60px;
+    
+}
+.None{
+    display: flex; 
+    flex-direction: column;
+    gap:10px;
+    border:2px solid #353535;
     padding:20px;
     border-radius: 17px;
     margin-top:60px;
