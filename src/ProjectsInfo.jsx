@@ -13,3 +13,20 @@ export function ProjectInfo({text , img, title, img2}){
 
     )
 }
+
+
+export function ProjectInfoMD({text , title, img }){
+    return (
+        <div className="ProjectXMD">
+            
+            <div className="DescriptionPro">
+                <em><strong>{title}</strong></em>
+                <p className="DescriptionProject"> {text}</p>
+            </div>
+            
+            <img src={img} className="tw-follow-avatarMD"/> 
+        </div>
+
+
+    )
+}

@@ -10,6 +10,17 @@
    
      
 }
+.rigthScreenMD{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-1930px;
+    gap:40px;
+    margin-right: 10px;
+   
+     
+}
 
 .rigthScreen-wd-t{
     display:flex;
@@ -17,6 +28,17 @@
     align-items: flex-end; 
     position: relative; 
     top:-2275px;
+    gap:40px;
+    margin-right: 10px;
+   
+}
+
+.rigthScreen-wd-tMD{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-2748px;
     gap:40px;
     margin-right: 10px;
    
@@ -31,6 +53,16 @@
     margin-right: 10px;
    
 }
+.rigthScreen-wd-dbMD{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-3440px;
+    gap:40px;
+    margin-right: 10px;
+   
+}
 .rigthScreen-wd-fr{
    
     display:flex;
@@ -38,6 +70,19 @@
     align-items: flex-end; 
     position: relative; 
     top:-2881px;
+    gap:40px;
+    margin-right: 10px;
+       
+         
+    
+}
+.rigthScreen-wd-frMD{
+   
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-3347px;
     gap:40px;
     margin-right: 10px;
        
@@ -56,6 +101,17 @@
    
      
 }
+.rigthScreen-laMD{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-4674px;
+    gap:40px;
+    margin-right: 10px;
+   
+     
+}
 
 .rigthScreen-wd{
     display:flex;
@@ -63,6 +119,17 @@
     align-items: flex-end; 
     position: relative; 
     top:-2881px;
+    gap:40px;
+    margin-right: 10px;
+   
+     
+}
+.rigthScreen-wdMD{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-3327px;
     gap:40px;
     margin-right: 10px;
    
@@ -88,7 +155,33 @@
     
     
 }
+.LanguagesMD{
+    display: flex; 
+    flex-direction: column;
+    gap:10px;
+    border:2px solid hsl(260, 69%, 68%);
+    padding:20px;
+    border-radius: 17px;
+    margin-top:60px;
+    text-align: center;
+    
+}
+.LanguagesMD ul{
+    list-style: none;
+    
+}
+.ProjectX{
 
+    display: flex;
+    margin-top: 60px;
+    align-items: center;
+    gap:20px;
+    border:1px solid #353535;
+    padding:10px;
+    border-radius: 17px;
+    text-align: center;
+    
+}
 .desciptionSpam{
     display: flex;
     margin-top:0px;
@@ -169,6 +262,13 @@
     border-radius: 1000px;
     align-self: flex-start;
 }
+.tw-follow-avatarMD{
+    width: 48px;
+    height: 48px;
+    border-radius: 1000px;
+    align-self: flex-start;
+    margin-left:90px
+}
 
 .tw-follow-button{
     margin-left: 16px;
@@ -185,7 +285,7 @@
     display:flex; 
     flex-direction: column;
 }
-.ProjectX{
+.ProjectXMD{
 
     display: flex;
     margin-top: 60px;
@@ -193,7 +293,8 @@
     gap:20px;
     border:1px solid #353535;
     padding:10px;
-    border-radius: 17px;;
+    border-radius: 17px;
+    flex-direction: column;
     
 }
 .menuGif{

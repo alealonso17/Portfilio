@@ -1,6 +1,6 @@
 
 
-export function Description(){
+export function DescriptionBig(){
     
 
     return (
@@ -22,6 +22,36 @@ export function Description(){
                 <img src="/Aboutme1.jpg" className="imagenNoticiaRelevante" /> 
                 <img src="/Aboutme2.jpg" className="imagenNoticiaRelevante" /> 
                 <img src="/Aboutme3.jpeg" className="imagenNoticiaRelevante"  /> 
+            </div>
+
+        </section>
+        
+    )
+
+}
+
+export function DescriptionMD(){
+    
+
+    return (
+        <section className="AboutMe"> 
+            <header className = "AboutMeText">
+                <h1 className="titleAboutME">ABOUT ME</h1>
+                <p className="DescriptionAboutMe">
+    I am a Computer Science <br/>student at Robert <br/>Gordon University, <br/>
+    originally from Spain,<br/> with a strong passion<br/> for software development,<br/>
+    problem-solving,<br/> and learning new <br/>technologies. I <br/>have a solid<br/>
+    foundation in <br/>technology, a proven<br/> track record of <br/>academic excellence<br/>
+    (all A’s so far), <br/>and achievements in robotics <br/>and scientific projects.<br/>
+    I am eager to apply<br/> my skills, contribute to <br/>innovative projects,<br/>
+    and make a meaningful<br/> impact in the tech industry.
+</p>
+
+            </header>
+            <div className = "imagesAboutMe">
+                
+                <img src="/Aboutme2.jpg" className="imagenNoticiaRelevante" /> 
+                
             </div>
 
         </section>
