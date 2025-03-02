@@ -42,7 +42,7 @@ export function AbilitesDisplay({selected}) {
                                  the desired accuracy.
                             </>
                         }
-                        img2="/trofeo.jpg"
+                        img2="/wbpr.png"
                     /> 
                         <ProjectInfo
                         img = "/python.png"
@@ -61,7 +61,7 @@ export function AbilitesDisplay({selected}) {
                                     all videos<br/> shorter than that.
                             </>
                         }
-                        img2="/trofeo.jpg"
+                        img2="/bkpr.png"
                     /> 
                                             <ProjectInfo
                         img = "/c.png"
@@ -82,7 +82,7 @@ export function AbilitesDisplay({selected}) {
                                        that stores player data.
                             </>
                         }
-                        img2="/trofeo.jpg"
+                        img2="/dbpr.png"
                     /> 
                         
                 </section>
@@ -123,7 +123,7 @@ export function AbilitesDisplay({selected}) {
                                        endless.
                             </>
                         }
-                        img2="/trofeo.jpg"
+                        img2="/haunter.gif"
                     /> 
 
                         
@@ -165,7 +165,7 @@ export function AbilitesDisplay({selected}) {
                                        endless.
                             </>
                         }
-                        img2="/trofeo.jpg"
+                        img2="/haunter.gif"
                     /> 
 
                         
@@ -210,7 +210,7 @@ export function AbilitesDisplay({selected}) {
                                        that stores player data.
                             </>
                         }
-                        img2="/trofeo.jpg"
+                        img2="/dbpr.png"
                     /> 
                         
 

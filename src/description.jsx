@@ -19,7 +19,7 @@ export function DescriptionBig(){
 
             </header>
             <div className = "imagesAboutMe">
-                <img src="/Aboutme1.jpg" className="imagenNoticiaRelevante" /> 
+                <img src="/hs.png" className="imagenNoticiaRelevante" /> 
                 <img src="/Aboutme2.jpg" className="imagenNoticiaRelevante" /> 
                 <img src="/Aboutme3.jpeg" className="imagenNoticiaRelevante"  /> 
             </div>
