@@ -10,6 +10,69 @@
    
      
 }
+.imageMobile{
+    border-radius: 10%;
+    height: 100px;
+}
+.mobileIntro{
+    display:flex; 
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    
+
+}
+
+.mobileIntro h2{
+    color: hsl(260, 69%, 68%);
+}
+.discoverMOBILE{
+    display: flex;
+    flex-direction: column;
+    gap:30px;
+    
+    margin-top: 40px;
+    border: 2px solid #353535;
+    width: 300px;
+    border-radius: 17px;
+    padding: 20px;
+    
+    
+     
+}
+.descriptionMobile{
+    display:flex; 
+    gap: 30px;
+}
+.mobileDes{
+    display: flex; 
+    flex-direction: column; 
+    align-items: center;
+    gap:30px; 
+
+}
+.descriptionMobile ul{
+    
+    list-style: none;
+    text-align: center;
+    border : 1px solid hsl(260, 69%, 68%);
+    padding: 10px;
+    border-radius: 17px;
+    
+    
+}
+.rigthScreenMB{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-765px;
+    gap:40px;
+    margin-right: 10px;
+   
+     
+}
+
 .rigthScreenMD{
     display:flex;
     flex-direction: column;
@@ -32,7 +95,16 @@
     margin-right: 10px;
    
 }
-
+.rigthScreen-wd-tMB{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-2275px;
+    gap:40px;
+    margin-right: 10px;
+   
+}
 .rigthScreen-wd-tMD{
     display:flex;
     flex-direction: column;
@@ -63,7 +135,43 @@
     margin-right: 10px;
    
 }
+.rigthScreen-wd-dbMB{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-3440px;
+    gap:40px;
+    margin-right: 10px;
+   
+}
 .rigthScreen-wd-fr{
+   
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-2881px;
+    gap:40px;
+    margin-right: 10px;
+       
+         
+    
+}
+.rigthScreen-wd-fr{
+   
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-2881px;
+    gap:40px;
+    margin-right: 10px;
+       
+         
+    
+}
+.rigthScreen-wd-frMB{
    
     display:flex;
     flex-direction: column;
@@ -101,6 +209,17 @@
    
      
 }
+.rigthScreen-laMB{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-4091px;
+    gap:40px;
+    margin-right: 10px;
+   
+     
+}
 .rigthScreen-laMD{
     display:flex;
     flex-direction: column;
@@ -112,8 +231,22 @@
    
      
 }
-
+.allWindow{
+    display:flex ; 
+    flex-direction: column;
+}
 .rigthScreen-wd{
+    display:flex;
+    flex-direction: column;
+    align-items: flex-end; 
+    position: relative; 
+    top:-2881px;
+    gap:40px;
+    margin-right: 10px;
+   
+     
+}
+.rigthScreen-wdMB{
     display:flex;
     flex-direction: column;
     align-items: flex-end; 
