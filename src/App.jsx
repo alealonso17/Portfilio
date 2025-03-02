@@ -46,10 +46,11 @@
       { name: 'Twitter', url: 'https://twitter.com' },
       { name: 'LinkedIn', url: 'https://www.linkedin.com/in/alejandro-alonso-lopez-b9145b353/' },
       { name: 'Instagram', url: 'https://www.instagram.com/alealonso017/' },
-      { name: 'My Knowledge', url: '#' },
-      { name: 'Academic Studies', url: '#' },
-      { name: 'About Me', url: '#' },
-      { name: 'Competitions', url: '#' },
+      { name: 'What is FLL?', url: 'https://www.firstlegoleague.org/about' },
+      { name: 'Robert Gordon Uni', url: 'https://www.rgu.ac.uk/study/academic-schools/school-of-computing-engineering-and-technology' },
+
+
+      
     ];
 
     // Filtrar las opciones según el texto de búsqueda
@@ -214,7 +215,7 @@
       
                   </div>
                   <div className={discover}> 
-                      <h1 className="Discover_text">Technologies & Tools</h1>
+                      <h1 className="Discover_text" id ="tech">Technologies & Tools</h1>
                       <div className="followers">
                       <TecDisplay 
                               name="Languages" 
